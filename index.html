@@ -1,0 +1,536 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<title>Bots: a cultural tour</title>
+
+	<link rel="stylesheet" href="css/reveal.css">
+	<link rel="stylesheet" href="css/theme/mewo2.css">
+
+</head>
+
+<body>
+
+	<div class="reveal">
+		<div class="slides">
+			<section>
+				<h1>Bots: a cultural tour</h1>
+				<h3>Martin O'Leary | @mewo2</h3>
+				<aside class="notes">
+					[These are the slides from a talk I gave to the Digital Cultures Group in Manchester in May 2017. The audience were a group
+					of "arts organisations and cultural producers"]
+				</aside>
+			</section>
+			<section>
+				<section>
+					<h2>Who's this guy?</h2>
+					<aside class="notes">
+						Before we start, I thought I'd say a little about who I am, so you can get a sense of where I'm coming from with this.
+					</aside>
+				</section>
+				<section data-background-image="assets/oriel.jpg">
+					<h2>I'm a curator</h2>
+					<aside class="notes">
+						Professionally, I'm the curator of Oriel Science, which is a small science exhibition centre, attached to Swansea University.
+						I spend most of my time making and sourcing exhibits, and acting as a go-between between scientists and the public.
+					</aside>
+				</section>
+				<section data-background-image="assets/svalbard.jpg">
+					<h2>I'm a scientist</h2>
+					<aside class="notes">
+						I'm also a working scientist - specifically I'm a glaciologist. I work on the flow and fracture of glacial ice, in Greenland
+						and Antarctica.
+					</aside>
+				</section>
+				<section>
+					<img width="80%" src="assets/riftmap.png">
+					<aside class="notes">I f you've seen anything in the news recently about a large iceberg about to break off from Antarctica, that's the work
+						of our group. Watching the iceberg, that is. We didn't break it off.
+					</aside>
+				</section>
+				<section data-background-image="assets/brutal.png">
+					<h2>I'm a "creative coder"</h2>
+					<aside class="notes">
+						I'm also a "creative coder", which is to say that I enjoy making computers do things for the purposes of art and entertainment.
+						Mostly these days, that means making bots.
+					</aside>
+				</section>
+			</section>
+			<section>
+				<section>
+					<h2>What's a bot?</h2>
+					<p class="fragment">
+						A bot is a machine that takes the place of a human in a communications medium</p>
+					<aside class="notes">
+						I trained as a mathematician, so I like to start from definitions. This is the definition I find most useful. As humans,
+						we create systems for interacting with each other. If we take a machine and insert it into that system, playing the
+						role of a human, then that's what I call a bot. The machine still obeys the rules of the system in the same way that
+						a human would - we don't interact with the machine any differently to a human.
+					</aside>
+				</section>
+				<section>
+					<img width="50%" src="assets/answeringmachine.jpg">
+					<aside class="notes">
+						Here's an example of a bot. We created the telephone network as a way for humans to talk to each other. At some point, someone
+						decided to plug a machine into that system. You call a number, expecting to talk to a human, but instead you talk to
+						a machine. The affordances of the telephone haven't changed - the phone hasn't suddenly sprouted a keyboard and mouse.
+						You still have to speak to the machine as you would to a human. From the perspective of the telephone network, you
+						and the answering machine are the same kind of thing.
+					</aside>
+				</section>
+				<section>
+					<p>
+						A bot is a
+						<s>machine</s> <strong>computer program</strong> that takes the place of a human in a
+						<s>communications medium</s> <strong>social network</strong></p>
+					<aside class="notes">
+						Now, it's 2017, so most of the "machines" that we interact with are actually computer programs, and most of the communications
+						media are actually social networks. But the underlying principles are the same. We're still looking at machines which
+						interact on human terms. Some people like to argue that this is a dehumanising development. We're taking human communication,
+						which has already been abstracted into 140 characters of text or whatever, and we're introducing machines into the
+						mix, so we don't know if we're talking to a real human or not. I'm sympathetic to that view, but I would counter that
+						there's a rehumanising aspect as well - we're forcing the machines to interact on our terms, not theirs. Also, probably
+						worth saying that Twitter is by far the dominant social network for bots. There are various reasons for that, which
+						I'm happy to talk about afterwards if anyone's interested.
+					</aside>
+				</section>
+				<section>
+					<img height="600px" src="assets/spam.png">
+					<aside class="notes">
+						So here are some examples of bots. This young lady who followed me on Twitter the other day is a classic spam bot. She follows
+						people, posts some saucy photos, and tries to get you to click on this link, which turns out to be a malware delivery
+						system.
+					</aside>
+				</section>
+				<section>
+					<img height="600px" src="assets/trump.png">
+					<aside class="notes">
+						This is a more topical use of bots. It's interesting to see how crude this stuff is - identical posts with no variation -
+						very easy to filter out and block. Spam bots have been using much more sophisticated techniques for decades.
+					</aside>
+				</section>
+				<section>
+					<img height="600px" src="assets/microsoft.png">
+					<aside class="notes">
+						And this is what the tech industry would like you to think bots are all about. A sort of automated personal shopper. I can't
+						say that I see the point, personally, but there's a ridiculous amount of money being spent on this, so basic economic
+						theory says that either there's a point somewhere, or that the entire tech industry is a sham.
+					</aside>
+				</section>
+				<section>
+					<h2>"Art bots"</h2>
+					<p class="fragment">Programs which generate "content"</p>
+					<p class="fragment">Usually run on a schedule</p>
+					<p class="fragment">Mostly disconnected posts</p>
+					<p class="fragment">Often not interactive</p>
+					<p class="fragment">...very like a spam bot</p>
+					<aside class="notes">
+						What I want to talk about today are "art bots" - bots made for artistic or entertainment purposes. They're sort of embarassingly
+						similar to spam bots, but they're not usually trying to get you to click on a dodgy link.
+					</aside>
+				</section>
+				<section data-twitter-embed="botston">
+					<h3>Bot-ston (Martin O'Leary)</h3>
+					<aside class="notes">
+						By way of example, this is one of my bots, Bot-ston. It generates new lyrics to the "Gaston" song from Disney's Beauty and
+						the Beast, and sets them to music. You follow this on Twitter, and four times a day you get a little video clip that
+						makes you smile.
+					</aside>
+				</section>
+			</section>
+
+			<section>
+				<section>
+					<h2>Bots as performers</h2>
+					<aside class="notes">
+						For the rest of the talk, I'm going to go through some bots, and talk about how they work aesthetically.
+					</aside>
+				</section>
+				<section>
+					<h2>Performance</h2>
+					<img width="30%" src="assets/romeo.jpg" style="vertical-align:middle">
+					<span class="fragment"> → <img style="vertical-align:middle" width="10%" src="assets/question.png"></span>
+					<span class="fragment"> → <img width="30%" src="assets/romeoplus.jpg" style="vertical-align:middle"></span>
+					<aside class="notes">
+						I want to start by talking about performance. If we think about a play, then we have a script, which is a static artifact,
+						and then it gets performed, and at the end there might be a recording, which is also a static artifact. But neither
+						of these things is the play. The play - the primary work of art - is the ephemeral thing in the middle, the performance.
+						We can think the same way about computer programs. We have some source code, which we can save and archive, and we
+						have some output, which we can also save and archive. But there's a thing in the middle, which we can't save, because
+						it's a process, and it can't be stripped from its context. There's obviously a difference between a play and a computer
+						program, because the performance of a play involves human beings, and the running of a computer program is an entirely
+						inanimate thing. The difference with a bot though, is that the program is presenting itself as a human, or human-equivalent
+						thing. So from the perspective of the audience, there is a performance happening, even if that's not really what's
+						going on at the performer end.
+					</aside>
+				</section>
+				<section data-twitter-embed="CRASH__N__BURN">
+					<h3>CRASH__N__BURN (Stephanie Hyland)</h3>
+					<aside class="notes">
+						Here's a simple example of a bot performance. CRASH__N__BURN does a reading of the script to the 199? movie Hackers, at fairly
+						irregular intervals - I think whenever Stephanie really feels like it. It takes about three or four weeks to do a full
+						run-through, then it goes quiet until the next performance.
+					</aside>
+				</section>
+				<section>
+					<blockquote class="twitter-tweet" data-lang="en">
+						<p lang="und" dir="ltr"><a href="https://twitter.com/AlphaNano">@AlphaNano</a> <a href="https://twitter.com/CRASH__N__BURN">@CRASH__N__BURN</a>							<a href="https://t.co/DqfEZsNQxf">pic.twitter.com/DqfEZsNQxf</a></p>&mdash; TЯEИT👽📡 (@pr1ntf) <a href="https://twitter.com/pr1ntf/status/825087710255669248">January 27, 2017</a></blockquote>
+					<aside class="notes">
+						People get excited about this! While it's running, there's a great community of people commenting on it, enjoying a shared
+						experience.
+					</aside>
+				</section>
+				<section>
+					<blockquote class="twitter-tweet" data-lang="en">
+						<p lang="en" dir="ltr"><a href="https://twitter.com/solarce">@solarce</a> <a href="https://twitter.com/CRASH__N__BURN">@CRASH__N__BURN</a>							oh wow you just brought me back 15 years ago.</p>&mdash; Michael Schubert (@schubertcx) <a href="https://twitter.com/schubertcx/status/827735892529922048">February 4, 2017</a></blockquote>
+					<aside class="notes">
+						Of course, it's Hackers, so these are a particular kind of people.
+					</aside>
+				</section>
+				<section data-twitter-embed="555uhz">
+					<h3>555 µHz (Ramsey Nasser)</h3>
+					<aside class="notes">
+						A similar project is 555µHz, by Ramsey Nasser. This took the movie Top Gun, cut it into images about a second apart, and
+						posted them at half-hourly intervals. It had a pretty similar community vibe. However, as you can see if you know the
+						movie, it only got about a quarter of the way through.
+					</aside>
+				</section>
+				<section data-background-iframe="https://motherboard.vice.com/en_us/article/the-top-gun-twitter-flipbook-has-been-shutdown">
+					<aside class="notes">
+						The reason for that is that it got hit with a cease and desist order by Paramount, who didn't want people distributing their
+						movie this way. So now there's just a decaying Twitter feed, with some of the images still there, others replaced with
+						copyright infringement warnings.
+					</aside>
+				</section>
+				<section>
+					<blockquote class="twitter-tweet" data-lang="en">
+						<p lang="en" dir="ltr">Dear <a href="https://twitter.com/555uhz">@555uhz</a> I want you to know you&#39;ll always be my fav Twitter acct and
+							I miss you everyday <a href="https://t.co/TumTcRaSu2">https://t.co/TumTcRaSu2</a></p>&mdash; MaulerTruckrHat (@RednckTruckrHat)
+						<a href="https://twitter.com/RednckTruckrHat/status/832431097220911104">February 17, 2017</a></blockquote>
+					<aside class="notes">
+						But the legend lives on...
+					</aside>
+				</section>
+				<section>
+					<blockquote class="twitter-tweet" data-lang="en">
+						<p lang="en" dir="ltr"><a href="https://twitter.com/555uhz">@555uhz</a> Never forget cc <a href="https://twitter.com/ra">@ra</a> <a href="https://t.co/HcJWtMFxMs">pic.twitter.com/HcJWtMFxMs</a></p>&mdash;
+						Nick Fox-Gieg (@n1ckfg) <a href="https://twitter.com/n1ckfg/status/703786750984982528">February 28, 2016</a></blockquote>
+				</section>
+				<section>
+					<h3>everyword (Allison Parrish)</h3>
+					<blockquote class="twitter-tweet" data-lang="en">
+						<p lang="und" dir="ltr">a</p>&mdash; everyword (@everyword) <a href="https://twitter.com/everyword/status/456927322">November 30, 2007</a></blockquote>
+					<aside class="notes">
+						This is a less traditional performance, but still definitely a performance. everyword was a project which ran for seven years,
+						and it performed the dictionary (or rather, a dictionary). So it started at 'a'.
+					</aside>
+				</section>
+				<section>
+					<blockquote class="twitter-tweet" data-lang="en">
+						<p lang="da" dir="ltr">aardvark</p>&mdash; everyword (@everyword) <a href="https://twitter.com/everyword/status/457086322">November 30, 2007</a></blockquote>
+				</section>
+				<section>
+					<blockquote class="twitter-tweet" data-lang="en">
+						<p lang="und" dir="ltr">sex</p>&mdash; everyword (@everyword) <a href="https://twitter.com/everyword/status/300061476100640768">February 9, 2013</a></blockquote>
+					<div class="fragment">
+						<blockquote class="twitter-tweet" data-lang="en">
+							<p lang="en" dir="ltr"><a href="https://twitter.com/everyword">@everyword</a> I HAVE BEEN WAITING FOR THIS DAY FOR A LONG TIME</p>&mdash;
+							Amy (@Aim0zz) <a href="https://twitter.com/Aim0zz/status/300063622611222529">February 9, 2013</a></blockquote>
+					</div>
+					<aside class="notes">
+						By the time it got to the second half of the alphabet, it had quite a following. People were excited when it got to particular
+						words.
+					</aside>
+				</section>
+				<section>
+					<blockquote class="twitter-tweet" data-lang="en">
+						<p lang="en" dir="ltr">zymurgy</p>&mdash; everyword (@everyword) <a href="https://twitter.com/everyword/status/475162751942545408">June 7, 2014</a></blockquote>
+					<div class="fragment">
+						<blockquote class="twitter-tweet" data-lang="en">
+							<p lang="en" dir="ltr">THE END IS HERE! <a href="https://twitter.com/everyword">@everyword</a>: zymurgy”</p>&mdash; Ron Fournier (@ron_fournier)
+							<a href="https://twitter.com/ron_fournier/status/475227241484677120">June 7, 2014</a></blockquote>
+					</div>
+					<aside class="notes">
+						And people were super excited when it got to the end of the line.
+					</aside>
+				</section>
+				<section>
+					<blockquote class="twitter-tweet" data-lang="en">
+						<p lang="fr" dir="ltr">éclair</p>&mdash; everyword (@everyword) <a href="https://twitter.com/everyword/status/475170297776447488">June 7, 2014</a></blockquote>
+					<div class="fragment">
+						<blockquote class="twitter-tweet" data-lang="en">
+							<p lang="en" dir="ltr">.<a href="https://twitter.com/everyword">@everyword</a> B-B-BUT<br><br>YOU CAN&#39;T<br><br>JUST <br><br>DO <br><br>THIS</p>&mdash;
+							Shin Neo (@NKGhidorah) <a href="https://twitter.com/NKGhidorah/status/475189325471023104">June 7, 2014</a></blockquote>
+					</div>
+					<aside class="notes">
+						And really annoyed by the plot twist.
+					</aside>
+				</section>
+				<section data-twitter-embed="everyword">
+					<aside class="notes">
+						It did actually end for real, later the same day. It had around 70,000 followers by the end, which is pretty good for an
+						experimental poetry project.
+					</aside>
+				</section>
+				<section>
+					<h2>Bots as performers</h2>
+					<p>Long, slow, casual performance</p>
+					<p>Audience interaction</p>
+					<p>Bounded or unbounded</p>
+					<aside class="notes">
+						So, summing up some qualities of bots as performers. These are long performances that you wander in and out of. You don't
+						pay attention to the whole thing. They're interactive - even if the bot doesn't actually reply, the audience interacts
+						with each other. Part of what drives this is having the bot be on the same level as the audience - there's no privileged
+						"stage" position. And finally, they can be bounded or unbounded, but finiteness definitely adds to the sense of performance.
+					</aside>
+				</section>
+			</section>
+			<section>
+				<section>
+					<h2>Bots as magicians</h2>
+					<aside class="notes">
+						I want to focus now on some similarities between bots and a particular kind of performer, which is magicians. [Full disclosure:
+						I wrote this bit of the talk while watching The Prestige, it may not make any sense]
+					</aside>
+				</section>
+				<section data-twitter-embed="sortingbot">
+					<h3>The Sorting Hat Bot (Darius Kazemi)</h3>
+					<aside class="notes">
+						<p>
+							This is Darius Kazemi's "Sorting Hat Bot", which is a pretty straightforward fun thing. You follow it, and it sorts you into
+							a Harry Potter house, and it writes a little poem about you.
+						</p>
+						<p>
+							To an experienced coder, this is not a complex thing. You get some word lists, and you pick from them at random. The rhyming
+							bit seems hard at first, but actually you just get a rhyming dictionary.
+						</p>
+					</aside>
+				</section>
+				<section>
+					<blockquote class="twitter-tweet" data-lang="en">
+						<p lang="en" dir="ltr"><a href="https://twitter.com/Kels_Schro">@Kels_Schro</a> <a href="https://twitter.com/SortingBot">@SortingBot</a> YO
+							HOW DID YOU MAKE THIS HAPPEN</p>&mdash; Ryan Harvot (@HarvotRyan) <a href="https://twitter.com/HarvotRyan/status/805988020096737281">December 6, 2016</a></blockquote>
+					<blockquote class="twitter-tweet" data-lang="en">
+						<p lang="en" dir="ltr"><a href="https://twitter.com/SortingBot">@SortingBot</a> how does this work lol?</p>&mdash; Ashlee Bailey-Seal (@AnnabelleLee94)
+						<a href="https://twitter.com/AnnabelleLee94/status/584978400944586752">April 6, 2015</a></blockquote>
+					<blockquote class="twitter-tweet" data-lang="en">
+						<p lang="en" dir="ltr"><a href="https://twitter.com/SortingBot">@SortingBot</a> how the fuck do u work</p>&mdash; Alizée 🥀 (@jcfuckash)
+						<a href="https://twitter.com/jcfuckash/status/751222110027124736">July 8, 2016</a>
+					</blockquote>
+					<aside class="notes">
+						To a large proportion of people, this is wizardry.
+					</aside>
+				</section>
+				<section data-background-color="white" data-background-iframe="http://tinysubversions.com/notes/sorting-bot">
+					<aside class="notes">
+						Darius wrote a thorough explanation of how the thing works, but the crucial bit that people care about is this one line at
+						the end. The actual sorting is done completely at random. But there's no way to know that from following the bot.
+					</aside>
+				</section>
+				<section>
+					<blockquote>The only secret of magic is that I'm willing to work harder on it than you think it's worth.</blockquote>
+					<p>Penn Jillette</p>
+					<aside class="notes">
+						This makes me think of this quote from the magician Penn Jillette. The way magic works is by convincing you that the real
+						explanation is less plausible than magic. So if you go to enough effort, people will assume you didn't, and that there's
+						some simple trick instead. But people are terrible at judging the amount of work that computers do. Looking through
+						every adjective in English, looking for one that rhymes with "born", is something a computer can do in microseconds.
+						So it's very easy to convince people that you're doing something more complex than you are.
+					</aside>
+				</section>
+				<section data-twitter-embed="oliviataters">
+					<h3>olivia taters (Rob Dubbin)</h3>
+					<aside class="notes">
+						This is olivia taters, who's a sort of fake teenage girl. She assembles these sentences which are mostly nonsensical, but
+						every so often there's something there which seems too real. So people assume there's something sophisticated going
+						on. But there really isn't. Everything olivia says is assembled by splicing together fragments of real tweets.
+					</aside>
+				</section>
+				<section data-twitter-embed="unchartedatlas">
+					<h3>Uncharted Atlas (Martin O'Leary)</h3>
+					<aside class="notes">
+						This is one of mine, to show the flipside. You can deploy a simple procedure to appear complex, or you can do something really
+						complex with a simple effect. This is generating fantasy maps, like you'd find in a cheap paperback sword and sorcery
+						novel. The amount of computation that goes into these is obscene. They're doing erosion modelling, and routing rivers
+						and all these things, for an output which is meant to look like a quick sketch.
+					</aside>
+				</section>
+				<section data-background-iframe="https://mewo2.com/notes/terrain">
+					<aside class="notes">
+						By the way, after this had been running for about six months, I wrote a very lengthy piece explaining how it works.
+					</aside>
+				</section>
+				<section>
+					<img src="assets/uagraph.png">
+					<aside class="notes">
+						The effect of this on the popularity of the bot was incredible. So that's a way in which bots are unlike magic - people do
+						actually want to know how it works, and it doesn't seem to diminish their appreciation.
+					</aside>
+				</section>
+			</section>
+
+
+			<section>
+				<section>
+					<h2>Bots as archivists</h2>
+					<aside class="notes">
+						I want to talk a little bit about bots as record-keepers, journalists and archivists.
+					</aside>
+				</section>
+				<section data-twitter-embed="parliamentedits">
+					<h3>Parliament WikiEdits (Ed Summers)</h3>
+					<aside class="notes">
+						This is a pretty simple example. It watches Wikipedia for edits made by IP addresses assigned to parliament buildings, and
+						posts links to those edits. You can see where your elected representatives are trying to shape your information sources.
+						This is a sort of journalistic project, but not something a human would ever be bothered to do - certainly not as an
+						ongoing project, and certainly not in real time.
+					</aside>
+				</section>
+				<section data-twitter-embed="nyt_diff">
+					<h3>Editing The Gray Lady (@j_e_d)</h3>
+					<aside class="notes">
+						This is the same thing, almost in reverse. Here we're watching for changes in the New York Times website. We can see how
+						headlines are edited as stories develop. This is the sort of thing that doesn't make it into conventional archives,
+						which would only store the "final form" of each story.
+					</aside>
+				</section>
+				<section>
+					<blockquote class="twitter-tweet" data-lang="en">
+						<p lang="es" dir="ltr">Cambio en el título <a href="https://t.co/glvwz9EkW3">pic.twitter.com/glvwz9EkW3</a></p>&mdash; Editando TN (@tn_diff)
+						<a href="https://twitter.com/tn_diff/status/864888795476500481">May 17, 2017</a></blockquote>
+				</section>
+				<section>
+					<blockquote class="twitter-tweet" data-lang="en">
+						<p lang="fr" dir="ltr">Modification du Titre <a href="https://t.co/sLsV5B6cDj">pic.twitter.com/sLsV5B6cDj</a></p>&mdash; L̶e̶ ̶S̶o̶i̶r̶ édité
+						(@lesoir_diff) <a href="https://twitter.com/lesoir_diff/status/864865651441139715">May 17, 2017</a></blockquote>
+				</section>
+				<section>
+					<blockquote class="twitter-tweet" data-lang="en">
+						<p lang="en" dir="ltr">Omar, perhaps world&#39;s longest cat, finds internet fame - BBC News <a href="https://t.co/Z2HyoelJQp">https://t.co/Z2HyoelJQp</a>							➜ <a href="https://t.co/zB2S7P0s5A">https://t.co/zB2S7P0s5A</a> <a href="https://t.co/1fJPPKHWKy">pic.twitter.com/1fJPPKHWKy</a></p>&mdash;
+						Editing the BBC (@bbc_diff) <a href="https://twitter.com/bbc_diff/status/864882600833409024">May 17, 2017</a></blockquote>
+				</section>
+				<section data-background-iframe="http://inconvergent.net/">
+					<h3>Anders Hoff aka inconvergent</h3>
+					<aside class="notes">
+						On a more artistic note, this is the website of a Norwegian artist called Anders Hoff. He makes what he calls "generative
+						art", pieces driven by code, by random algorithms which create 2d and 3d forms. There's a sort of tension here between
+						the final image as an artwork, and the code as a description of all possible artworks.
+					</aside>
+				</section>
+				<section data-twitter-embed="generativebot">
+					<h3>generative bot (Anders Hoff)</h3>
+					<aside class="notes">
+						Something he's done which I love is that he's set up a bot which regularly runs each of his algorithms and generates a new
+						piece, tagged with the version number of the code, and a random seed. So you build up a kind of sketchbook, showing
+						the evolution of the ideas in time, but also an exploration of all the possibilities of the random algorithm.
+					</aside>
+				</section>
+			</section>
+
+			<section>
+				<section>
+					<h2>Bots as curators</h2>
+					<aside class="notes">
+						Finally, I want to talk a bit about how bots work as curators of collections.
+					</aside>
+				</section>
+				<section data-twitter-embed="museumbot">
+					<h3>Museum Bot (Darius Kazemi)</h3>
+					<aside class="notes">
+						This is one of the most common kinds of bots - it has a large pool of images, in this case the catalogue of the Metropolitan
+						Museum of Art in New York, and it chooses from them at random and posts a little bit about that piece. This is nice,
+						and it's an effective way of sharing content, but it's a bit vague and undirected for my tastes.
+					</aside>
+				</section>
+				<section data-twitter-embed="oldschoolflyers">
+					<h3>Old School Flyers (Darius Kazemi)</h3>
+					<aside class="notes">
+						What I think are really great, are hyper-specific bots, like this one which shares old school hip-hop flyers. This is a much
+						more curated experience, and it gives the audience more scope to control what they want to see. If I follow Museum
+						Bot, I get everything from the Met, even if I'm only interested in pottery, say. This is focused delivery of the stuff
+						I want to see.
+				</section>
+				<section data-twitter-embed="moonshotbot">
+					<h3>Moon Shot Bot (Darius Kazemi)</h3>
+					<aside class="notes">
+						This works really well for collections which would be a bit intimidating to look at all at once. The photos from the Apollo
+						program are amazing, but to be honest I've had enough after about half a dozen. By drip-feeding them over time, you
+						get a much better experience. It sort of worms its way into your life. And the archive is still there if you want a
+						more full-on experience.
+				</section>
+				<section data-twitter-embed="nypl_dogs">
+					<h3>NYPL Dogs (Ashley Blewer)</h3>
+					<aside class="notes">
+						Of course, if you have a big and varied archive, you can easily slice and dice it to make something more focused. This shows
+						all the dogs in the New York Public Library digital collection.
+					</aside>
+				</section>
+				<section data-twitter-embed="DeathMedieval">
+					<h3>Medieval Death Bot (Soren Häxan)</h3>
+					<aside class="notes">
+						Images are popular, but you can also have text-based archives. This is sharing deaths from medieval coroner's reports. Some
+						of them are darkly comic, but over time they build to give a real sense of medieval life.
+					</aside>
+				</section>
+				<section data-background-iframe="http://noviceartblogger.tumblr.com/">
+					<h3>Novice Art Blogger (Matthew Plummer-Fernandez)</h3>
+					<aside class="notes">
+						We can also use collections as part of a larger project. This is taking images from the collection of the Tate, and putting
+						it through some image recognition code, then attempting to generate "art criticism".
+					</aside>
+				</section>
+				<section data-twitter-embed="archillect">
+					<h3>Archillect (Murat Pak)</h3>
+					<aside class="notes">
+						Everything I've shown you so far has been using a random selection from a human-curated selection. It's curation, but maybe
+						not super interesting curation. This is an attempt at automating curation. It posts images, looks at how many likes
+						and retweets they get, and tries to find more images which are similar to the popular ones. Over time it has evolved
+						a particular aesthetic, which I always think feels a bit Ridley Scott. I should add that some people take issue with
+						this bot because it doesn't provide attribution for its images - the author claims this is because that's technically
+						difficult, which I don't think is a very convincing argument for unethical behaviour.
+					</aside>
+				</section>
+			</section>
+			<section>
+				<section>
+					<h2>Not included: bots as poets</h2>
+					<p><a href="http://botshop.decontextualize.com/">Allison Parrish</a></p>
+					<p><a href="https://harrygiles.org/2016/04/06/some-strategies-of-bot-poetics/">Harry Giles</a></p>
+				</section>
+				<aside class="notes">
+					Before I finish, I should acknowledge that there's a huge gap in what I've talked about here, which is how bots interact with poetry. This is a whole thing, and I've included some links here to people who can talk about it better than I can.
+				</aside>
+			</section>
+			<section>
+				<section>
+					<h2>Thank you</h2>
+					<p>Twitter: <a href="http://twitter.com/mewo2">@mewo2</a></p>
+					<p>Email: <a href="mailto:m.e.w.oleary@gmail.com">m.e.w.oleary@gmail.com</a></p>
+					<p>Slides: <a href="http://mewo2.com/cultural-bots/">mewo2.com/cultural-bots</a></p>
+				</section>
+			</section>
+		</div>
+	</div>
+
+	<script src="lib/js/head.min.js"></script>
+	<script src="js/reveal.js"></script>
+	<script>
+		var slides = document.querySelectorAll("[data-twitter-embed]");
+		for (var i = 0; i < slides.length; i++) {
+			var slide = slides[i];
+			var username = slide.getAttribute("data-twitter-embed");
+			slide.innerHTML += "<a width=\"600px\" height=\"650px\" class=\"twitter-timeline\" href=\"https://twitter.com/" + username + "\"></a>";
+		}
+		Reveal.initialize({
+			dependencies: [
+				{ src: 'plugin/notes/notes.js', async: true }
+			]
+		});
+	</script>
+	<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+</body>
+
+</html>
